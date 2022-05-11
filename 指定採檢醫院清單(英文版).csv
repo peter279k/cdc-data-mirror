@@ -1,4 +1,4 @@
-���c�N�X,�ϰ�,����,��F��,���c�W��,�a�},�q��,�g��,�n��
+機構代碼,區域,縣市,行政區,機構名稱,地址,電話,經度,緯度
 0111070010,Taipei Region,Keelung City,Xinyi District,"Keelung Hospital, Ministry of Health and Welfare","No. 268, Xin 2nd Road, Xinyi District, Keelung City, 201",02-24292525,121.748322,25.130456
 1411030013,Taipei Region,Keelung City,Nuannuan District,Taiwan Miner's General Hospital,"No. 29, Yuanyuan Road, Nuannuan District, Keelung City, 205",02-24579101,121.733254,25.107904
 0511040010,Taipei Region,Keelung City,Zhongzheng District,Tri-Service General Hospital Keelung Branch,"No. 100, Zhengrong Street, Zhongzheng District, Keelung City, 202",02-24231735,121.764267,25.144625
@@ -11,10 +11,10 @@
 1101010012,Taipei Region,Taipei City,Songshan District,Taipei Chang Gung Memorial Hospital,"No. 199, DunHua N Rd, Songshan District, Taipei City, 105",02-27135211,121.5496556,25.0555992
 1101110026,Taipei Region,Taipei City,Neihu District,Kang-Ning General Hospital,"No. 26, Lane 420, Section 5, Chenggong Road, Neihu District, Taipei City, 114",02-26345500,121.6089476,25.0758907
 0901190010,Taipei Region,Taipei City,Wanhua District,West Garden Hospital,"No. 270, Section 2, Xiyuan Road, Wanhua District, Taipei City, 108",02-23076968,121.494405,25.027743
-1501010010,Taipei Region,Taipei City,Songshan District,Pojen General Hospital,"No. 66, Guangfu North Road, Songshan District, Taipei City, 105",02-25786677#2019�B0978-199960,121.5576835,25.0499097
+1501010010,Taipei Region,Taipei City,Songshan District,Pojen General Hospital,"No. 66, Guangfu North Road, Songshan District, Taipei City, 105",02-25786677#2019、0978-199960,121.5576835,25.0499097
 0701160518,Taipei Region,Taipei City,Beitou District,Taipei Municipal Gan-Dau Hospital,"No. 12, Ln. 225, Zhixing Rd., Beitou Dist., Taipei City 112, Taiwan (R.O.C.)",02-28587000,121.4662583,25.12048992
 0501160014,Taipei Region,Taipei City,Beitou District,Tri-Service General Hospital Beitou Branch,"No. 60, Xinmin Rd. Beitou Dist., Taipei City 112, Taiwan (R.O.C.)",02-28959808,121.5098927,25.13960801
-1501021219,Taipei Region,Taipei City,Da an District,Taipei Show Chwan Hospital,"No. 1, Ln. 116, Guangfu S. Rd., Da��an Dist., Taipei City 106, Taiwan (R.O.C.)",02-27717172,121.5568422,25.04312941
+1501021219,Taipei Region,Taipei City,Da an District,Taipei Show Chwan Hospital,"No. 1, Ln. 116, Guangfu S. Rd., Da’an Dist., Taipei City 106, Taiwan (R.O.C.)",02-27717172,121.5568422,25.04312941
 1231030015,Taipei Region,New Taipei City,Yonghe District,Yonghe Cardinal Tien Hospital?,"No. 80, Zhongxing Street, Yonghe District, New Taipei City, 234",02-29286060,121.51787,25.011874
 1331160010,Taipei Region,New Taipei City,Taishan District,Fu Jen Catholic University Hospital,"No. 69, Guizi Road, Taishan District, New Taipei City, 243",02-85128888,121.430799,25.039676
 1131110516,Taipei Region,New Taipei City,Xizhi District,Cathay General Hospital Sijhih Branch,"No. 2, Lane 59, Jiancheng Road, Xizhi District, New Taipei City, 221",02-26482121#3910,121.661084,25.072872
@@ -176,8 +176,8 @@
 2344030022,Kaohsiung-Pingtung Region,Penghu County,Baisha Township,Niaoyu Health Center,"No. 3, Yugang New Residential Quarter, Niaoyu, Baisha Township, Penghu County 884,",06-9916092,119.660087,23.660035
 0144010015,Kaohsiung-Pingtung Region,Penghu County,Magong City,"Penghu Hospital, Ministry of Health and Welfare","No. 10, Zhongzheng Road, Magong City, Penghu County, 880",06-9261151 ,119.565423,23.564553
 2344050024,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Jiangjun Health Center,"No. 1-3, Jiangjun'ao, Jiangjun Village, Wangan Township, Penghu County",06-9902066,119.521637,23.361397
-2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Huayu Health Room,"No. 5, Huayu, Wang?�an Township, Penghu County 882",06-9991739,119.320671,23.403736
-2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Wangan Township Health Center,"No. 36-7, Xi'an Village, Wang?�an Township, Penghu County 882",06-9991036 ,119.497377,23.361897
+2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Huayu Health Room,"No. 5, Huayu, Wang?緔n Township, Penghu County 882",06-9991739,119.320671,23.403736
+2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Wangan Township Health Center,"No. 36-7, Xi'an Village, Wang?緔n Township, Penghu County 882",06-9991036 ,119.497377,23.361897
 0645020015,Eastern Region,Hualien County,Fenglin Township,Taipei Veterans General Hospital Fenglin Branch,"No. 2, Section 1, Zhongzheng Road, Fenglin Township, Hualien County, 975",03-8764539 ,121.439215,23.727428
 0145080011,Eastern Region,Hualien County,Fengbin Township,"Hualien Hospital Fengbin Aboriginal Branch, Ministry of Health and Welfare","No. 41, Guangfeng Road, Fengbin Township, Hualien County, 977",03-8791385,121.521184,23.601957
 0545040515,Eastern Region,Hualien County,Xincheng Township,Hualien Armed Forces General Hospital,"No. 163, Jiali Road, Xincheng Township, Hualien County, 971",03-8263151,121.6074,24.024429
