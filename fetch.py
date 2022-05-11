@@ -24,7 +24,7 @@ data_url_lists = [
 data_url_encoding = [
     'utf-8',
     'big5-hkscs',
-    'utf-8',
+    'big5-hkscs',
     'utf-8',
     'utf-8',
     'utf-8',
