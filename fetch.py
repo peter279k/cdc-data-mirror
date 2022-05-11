@@ -52,6 +52,12 @@ for data_url in data_url_lists:
     contents = resp_text[1:-1]
     json_data = {'data': []}
     json_name = data_url.split('/')[-1].replace('.csv', '')
+    csv_name = json_name + '.csv'
+    csv_contents = unix_eof.join(resp_text)
+    file_handler = open(csv_name, 'w')
+    file_handler.write(csv_contents)
+    file_handler.close()
+
     json_file_name = urllib.parse.unquote(json_name) + '.json'
     file_handler = open(json_file_name, 'w')
     print('Processing the ' + json_file_name + ' has been started.')
