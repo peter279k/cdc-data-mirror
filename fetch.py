@@ -8,7 +8,7 @@ from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 
-print('Fetching CDC data started!')
+print('Fetching CDC data is started!')
 
 data_url_lists = [
     'https://data.nhi.gov.tw/resource/Nhi_Fst/Fstdata.csv',
@@ -21,8 +21,16 @@ data_url_lists = [
     'https://od.cdc.gov.tw/emerging/the-list-of-communicable-disease-isolation-hospitals-and-responding-hospitals-2020-2022.csv',
 ]
 
-data_url_encoding = ('big5-hkscs,' * 7)[0:-1].split(',')
-data_url_encoding.append('utf-8')
+data_url_encoding = [
+    'utf-8',
+    'big5-hkscs',
+    'utf-8',
+    'utf-8',
+    'utf-8',
+    'utf-8',
+    'utf-8',
+    'utf-8',
+]
 data_url_index = 0
 
 for data_url in data_url_lists:
@@ -63,4 +71,4 @@ for data_url in data_url_lists:
 
     print('Processing the ' + json_file_name + ' has been done.')
 
-print('Fetching CDC data started!')
+print('Fetching CDC data is done!')
