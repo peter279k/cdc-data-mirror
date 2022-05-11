@@ -50,7 +50,7 @@ for data_url in data_url_lists:
 
     json_keys = list(csv.reader([resp_text[0]]))[0]
     contents = resp_text[1:-1]
-    json_data = {'data': []}
+    json_data = []
     json_name = data_url.split('/')[-1].replace('.csv', '')
     csv_file_name = urllib.parse.unquote(json_name) + '.csv'
     csv_contents = unix_eof.join(resp_text)
@@ -69,7 +69,7 @@ for data_url in data_url_lists:
         for json_key in json_keys:
             json_obj[json_key] = line[index]
             index += 1
-        json_data['data'].append(json_obj)
+        json_data.append(json_obj)
 
     file_handler.write(json.dumps(json_data) + '\n')
     file_handler.close()
