@@ -15,7 +15,7 @@ pc = PyCloud(pcloud_user, pcloud_password, endpoint='nearest')
 response = pc.uploadfile(files=files, path='/cdc-data-mirror')
 
 if type(response) is dict and response['result'] == 0:
-    now_datetime = str(datetime.datetime.utcnow())
+    now_datetime = datetime.datetime.fromtimestamp(datetime.datetime.utcnow().timestamp() + 8*60*60).strftime('%Y-%m-%d %H:%M:%S')
     log_handler = open('./pcloud_upload.log', 'w')
     log_handler.write('Last uploading time: ' + now_datetime)
     log_handler.close()
