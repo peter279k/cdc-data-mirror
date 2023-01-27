@@ -1,0 +1,41 @@
+name: Update CSV Dataset and create JSON records from Taiwan CDC website
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get working copy
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install pipenv
+        run: pip install pipenv --user
+      - name: Setup Python virtual environment
+        run: |
+          PATH=$PATH:/home/peter/.local/bin
+          pipenv install
+      - name: Run fetch.py
+        run: pipenv run python fetch.py
+      - name: Run pcloud_uploader.py
+        run: |
+          export pcloud_user=${{ secrets.PCLOUD_USER }}
+          export pcloud_password=${{ secrets.PCLOUD_PASSWORD }}
+          pipenv run python pcloud_uploader.py
+      - name: Commit and push if it is changed
+        run: |
+          rm *.csv *.json
+          git config user.name "peter279k"
+          git config user.email "peter279k@gmail.com"
+          git add -A
+          timestamp=$(TZ="Asia/Taipei" date)
+          git commit -m "Last Commit: ${timestamp}(TW)" || exit 0
+          git push origin master
