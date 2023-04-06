@@ -34,11 +34,7 @@ data_url_encoding = [
 data_url_index = 0
 
 for data_url in data_url_lists:
-    try:
-        response = requests.get(data_url, verify=False)
-    except:
-        print('Request ' + data_url + ' is failed. Stopped.')
-        sys.exit(1)
+    response = requests.get(data_url, verify=False)
     response.encoding = data_url_encoding[data_url_index]
     win_eof = '\r\n'
     unix_eof = '\n'
