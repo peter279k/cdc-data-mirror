@@ -17,11 +17,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-      - name: Install pipenv
-        run: pip install pipenv --user
-      - name: Setup Python virtual environment
+          cache: 'pipenv'
+      - name: Install Python dependencies
         run: |
-          PATH=$PATH:/home/peter/.local/bin
           pipenv install
       - name: Run fetch.py
         run: pipenv run python fetch.py
