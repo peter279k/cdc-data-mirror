@@ -7,21 +7,17 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Get working copy
         uses: actions/checkout@master
         with:
           fetch-depth: 1
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-          cache: 'pip'
       - name: Install pipenv
         run: pip install --user pipenv
       - name: Install Python dependencies
         run: |
+          PATH=$PATH:/home/peter/.local/bin
           pipenv install
       - name: Run fetch.py
         run: pipenv run python fetch.py
