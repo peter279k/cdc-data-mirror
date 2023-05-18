@@ -36,4 +36,5 @@ jobs:
           git add -A
           timestamp=$(TZ="Asia/Taipei" date)
           git commit -m "Last Commit: ${timestamp}(TW)" || exit 0
+          git pull origin master -q
           git push origin master
