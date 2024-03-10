@@ -11,7 +11,7 @@ requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 print('Fetching CDC data is started!')
 
 data_url_lists = [
-    'https://data.nhi.gov.tw/resource/Nhi_Fst/Fstdata.csv',
+#    'https://data.nhi.gov.tw/resource/Nhi_Fst/Fstdata.csv',
     'https://od.cdc.gov.tw/icb/%E6%8C%87%E5%AE%9A%E6%8E%A1%E6%AA%A2%E9%86%AB%E9%99%A2%E6%B8%85%E5%96%AE.csv',
     'https://od.cdc.gov.tw/icb/%E6%8C%87%E5%AE%9A%E6%8E%A1%E6%AA%A2%E9%86%AB%E9%99%A2%E6%B8%85%E5%96%AE(%E8%8B%B1%E6%96%87%E7%89%88).csv',
     'https://od.cdc.gov.tw/eic/covid19/covid19_free_rapid_antigen_test_clinics.csv',
